@@ -10,7 +10,7 @@
         // converterObj.getDateNow(callback);
         // converterObj.datenowToSeconds(callback);
         // converterObj.timeDifference(1459327000, "", callback);
-        converterObj.intToFloat(data, 2, callback);
+        converterObj.shiftZeroRight(data, 2, callback);
     };
 
     module.exports = {
