@@ -4,9 +4,13 @@ Universal converter.
 <a href="#Number">Number</a>
 <br>
 <a href="#Date">Date/time</a>
+<br>
 <a href="#Types">Types</a>
+<br>
 <a href="#Bit">Bit</a>
+<br>
 <a href="#JSON">JSON</a>
+<br>
 <a href="#Checks">Checks</a>
 
 ## Usage
