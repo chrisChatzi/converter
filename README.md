@@ -2,6 +2,22 @@ Universal converter.
 
 ## Usage
 
+**From src**
+
+	Include to html header
+    
+    <script type="text/javascript" src="~path/converter.js"></script>
+    
+    or the minified version
+    
+    <script type="text/javascript" src="~path/converter.min.js"></script>
+    
+    and then use class
+    
+    var converterObj = new converter();
+    
+**AMD**
+
 	var converter = require("~path/converter");
     var converterObj = new converter();
     converterObj.methodName(parameters);
