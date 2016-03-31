@@ -9,7 +9,7 @@ Universal converter.
 <br>
 <a href="#bit">Bit operations</a>
 <br>
-<a href="#json">JSON and arrays</a>
+<a href="#json">JSON and array conversions</a>
 <br>
 <a href="#checks">Checks</a>
 
