@@ -1,7 +1,7 @@
 Universal converter.
 
 ##### Methods
-<a href="#Number">Number</a>
+<a href="###Number">Number</a>
 <br>
 <a href="#Date">Date/time</a>
 <br>
