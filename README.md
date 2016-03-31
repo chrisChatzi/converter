@@ -39,7 +39,9 @@ var converterObj = new converter();
 
 ```javascript
 var converter = require("~path/converter");
+
 var converterObj = new converter();
+
 converterObj.methodName(parameters);
 ```
 
