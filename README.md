@@ -1,5 +1,11 @@
 Universal converter.
 
+## Usage
+
+	var converter = require("~path/converter");
+    var converterObj = new converter();
+    converterObj.methodName(parameters);
+
 ## Includes
 
 **Number**
