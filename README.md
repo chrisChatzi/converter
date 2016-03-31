@@ -1,7 +1,7 @@
 Universal converter.
 
 ##### Methods
-<a href="#number">Number conversions (binary, octal, decimal, hex)</a>
+⋅⋅*<a href="#number">Number conversions (binary, octal, decimal, hex)</a>
 <br>
 <a href="#date">Date and time</a>
 <br>
