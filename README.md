@@ -12,11 +12,15 @@ Include to html header
     
 or the minified version
     
-    <script type="text/javascript" src="~path/converter.min.js"></script>
-    
+```javascript
+<script type="text/javascript" src="~path/converter.min.js"></script>
+```
+
 and then use class instance
     
-    var converterObj = new converter();
+```javascript
+var converterObj = new converter();
+```
     
 **AMD**
 
