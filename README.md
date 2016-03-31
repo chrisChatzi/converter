@@ -6,9 +6,9 @@ Universal converter.
 
 Include to html header
     
-    ```javascript
+    '''javascript
     <script type="text/javascript" src="~path/converter.js"></script>
-    ```
+    '''
     
 or the minified version
     
