@@ -45,7 +45,7 @@ converterObj.methodName(parameters);
 
 ## Methods
 
-**Number**
+#####Number
 
 binary to octal
 
@@ -119,7 +119,7 @@ hexadecimal to decimal
 hexToDec(input, callback);
 ```
 
-**Date/time**
+#####Date/time
 
 date now
 
@@ -157,7 +157,7 @@ time difference
 timeDifference(from, to, callback);
 ```
 
-**Types**
+#####Types
 
 int to float
 
@@ -177,7 +177,7 @@ float rounded
 floatRounded(input, callback);
 ```
 
-**Bit**
+#####Bit
 
 get bit value in position
 
@@ -227,7 +227,7 @@ bitwise NOT
 bitNot(input, callback);
 ```
 
-**JSON**
+#####JSON
 
 array to JSON (only values)
 
