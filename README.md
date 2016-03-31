@@ -203,12 +203,19 @@ check IP
 check type of
 
 	checkIfNull(input, callback);
+    
     checkIfUndefined(input, callback);
+    
     checkIfFunction(input, callback);
+    
     checkIfObject(input, callback);
+    
     checkIfArray(input, callback);
+    
     checkIfString(input, callback);
+    
     checkIfNumber(input, callback);
+    
     checkIfBoolean(input, callback);
     
 get type of
