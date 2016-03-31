@@ -4,15 +4,15 @@ Universal converter.
 
 **From src**
 
-	Include to html header
+Include to html header
     
     <script type="text/javascript" src="~path/converter.js"></script>
     
-    or the minified version
+or the minified version
     
     <script type="text/javascript" src="~path/converter.min.js"></script>
     
-    and then use class
+and then use class instance
     
     var converterObj = new converter();
     
