@@ -49,6 +49,7 @@ converterObj.methodName(parameters);
 
 <a href="#number"></a>
 #####Number
+___
 
 binary to octal
 
@@ -124,6 +125,7 @@ hexToDec(input, callback);
 
 <a href="#date"></a>
 #####Date/time
+___
 
 date now
 
@@ -163,6 +165,7 @@ timeDifference(from, to, callback);
 
 <a href="#types"></a>
 #####Types
+___
 
 int to float
 
@@ -184,6 +187,7 @@ floatRounded(input, callback);
 
 <a href="#bit"></a>
 #####Bit
+___
 
 get bit value in position
 
@@ -235,6 +239,7 @@ bitNot(input, callback);
 
 <a href="#json"></a>
 #####JSON
+___
 
 array to JSON (only values)
 
@@ -294,6 +299,7 @@ stringToArray(input, callback);
 
 <a href="#checks"></a>
 #####Checks
+___
 
 check MAC
 
