@@ -55,7 +55,7 @@ binToHex(input, callback);
 octal to binary
 
 ```javascript
-ovtToBin(input, callback);
+octToBin(input, callback);
 ```
 
 octal to decimal
@@ -110,146 +110,204 @@ hexToDec(input, callback);
 
 date now
 
-	getDateNow(callback);
+```javascript
+getDateNow(callback);
+```
 
 date now to seconds
 
-	datenowToSeconds(callback);
+```javascript
+datenowToSeconds(callback);
+```
 
 date to seconds
 
-	dateToSeconds(input, callback);
+```javascript
+dateToSeconds(input, callback);
+```
 
 seconds to date
 
-	secondsToDate(input, callback);
+```javascript
+secondsToDate(input, callback);
+```
 
 get timezone
 
-	getTimezone(callback);
+```javascript
+getTimezone(callback);
+```
 
 time difference
 
-	timeDifference(from, to, callback);
+```javascript
+timeDifference(from, to, callback);
+```
 
 **Types**
 
 int to float
 
-	intToFloat(input, digits, callback);
+```javascript
+intToFloat(input, digits, callback);
+```
 
 float to int
 
-	floatToInt(input, callback);
+```javascript
+floatToInt(input, callback);
+```
 
 float rounded
 
-	floatRounded(input, callback);
+```javascript
+floatRounded(input, callback);
+```
 
 **Bit**
 
 get bit value in position
 
-	getBit(input, position, callback);
+```javascript
+getBit(input, position, callback);
+```
 
 shift left
 
-	shiftLeft(input, bits, callback);
+```javascript
+shiftLeft(input, bits, callback);
+```
 
 shift right
 
-	shiftRight(input, bits, callback);
+```javascript
+shiftRight(input, bits, callback);
+```
 
 shift zero-fill right
 
-	shiftZeroRight(input, bits, callback);
+```javascript
+shiftZeroRight(input, bits, callback);
+```
 
 bitwise AND
 
-	bitAnd(input1, input2, callback);
+```javascript
+bitAnd(input1, input2, callback);
+```
 
 bitwise OR
 
-	bitOr(input1, input2, callback);
+```javascript
+bitOr(input1, input2, callback);
+```
 
 bitwise XOR
 
-	bitXor(input1, input2, callback);
+```javascript
+bitXor(input1, input2, callback);
+```
 
 bitwise NOT
 
-	bitNot(input, callback);
+```javascript
+bitNot(input, callback);
+```
 
 **JSON**
 
 array to JSON (only values)
 
-	{ "0" : val1, "1" : val2, ... }
+```javascript
+{ "0" : val1, "1" : val2, ... }
 
-	arrayToJson(input, callback);
+arrayToJson(input, callback);
+```
     
 array to JSON (keys and values)
 
-	{ key1 : val1, key2 : val2, ... }
+```javascript
+{ key1 : val1, key2 : val2, ... }
 
-	arrayToJsonKeyVal(input, callback);
+arrayToJsonKeyVal(input, callback);
+```
 
 JSON to array (only values)
 
-	[val1, val2, ... ]
+```javascript
+[val1, val2, ... ]
 
-	jsonToArray(input, callback);
+jsonToArray(input, callback);
+```
     
 JSON to array of arrays
 
-	[ [ key1, val1 ], [ key2, val2 ], ... ]
+```javascript
+[ [ key1, val1 ], [ key2, val2 ], ... ]
 
-	jsonToArrayofArrays(input, callback);
+jsonToArrayofArrays(input, callback);
+```
 
 JSON to string
 
-	jsonToString(input, callback);
+```javascript
+jsonToString(input, callback);
+```
 
 string to JSON
 
-	stringToJson(input, callback);
+```javascript
+stringToJson(input, callback);
+```
 
 array to string
 
-	arrayToString(input, callback);
+```javascript
+arrayToString(input, callback);
+```
 
 string to array
 
-	stringToArray(input, callback);
+```javascript
+stringToArray(input, callback);
+```
     
 **Checks**
 
 check MAC
 
-	checkMac(input, callback);
+```javascript
+checkMac(input, callback);
+```
     
 check IP
 
-	checkIP(input, callback);
+```javascript
+checkIP(input, callback);
+```
     
 check type of
 
-	checkIfNull(input, callback);
+```javascript
+checkIfNull(input, callback);
     
-    checkIfUndefined(input, callback);
+checkIfUndefined(input, callback);
     
-    checkIfFunction(input, callback);
+checkIfFunction(input, callback);
     
-    checkIfObject(input, callback);
+checkIfObject(input, callback);
+  
+checkIfArray(input, callback);
+ 
+checkIfString(input, callback);
     
-    checkIfArray(input, callback);
+checkIfNumber(input, callback);
     
-    checkIfString(input, callback);
-    
-    checkIfNumber(input, callback);
-    
-    checkIfBoolean(input, callback);
+checkIfBoolean(input, callback);
+```
     
 get type of
 
-	check(input, callback);
+```javascript
+check(input, callback);
+```
