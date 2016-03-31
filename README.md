@@ -40,51 +40,71 @@ binary to octal
 binToOct(input, callback);
 ```
 
-	binToOct(input, callback);
-
 binary to decimal
 
-	binToDec(input, callback);
+```javascript
+binToDec(input, callback);
+```
 
 binary to hexadecimal
 
-	binToHex(input, callback);
+```javascript
+binToHex(input, callback);
+```
 
 octal to binary
 
-	octToBin(input, callback);
+```javascript
+ovtToBin(input, callback);
+```
 
 octal to decimal
 
-	octToDec(input, callback);
+```javascript
+octToDec(input, callback);
+```
 
 octal to hexadecimal
 
-	octToHex(input, callback);
+```javascript
+octToHex(input, callback);
+```
 
 decimal to binary
 
-	decToBin(input, callback);
+```javascript
+decToBin(input, callback);
+```
 
 decimal to octal
 
-	decToOct(input, callback);
+```javascript
+decToOct(input, callback);
+```
 
 decimal to hexadecimal
 
-	decTohex(input, callback);
+```javascript
+decToHex(input, callback);
+```
 
 hexadecimal to binary
 
-	hexToBin(input, callback);
+```javascript
+hexToBin(input, callback);
+```
 
 hexadecimal to octal
 
-	hexToOct(input, callback);
+```javascript
+hexToOct(input, callback);
+```
 
 hexadecimal to decimal
 
-	hexToDec(input, callback);
+```javascript
+hexToDec(input, callback);
+```
 
 **Date/time**
 
