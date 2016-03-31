@@ -24,9 +24,11 @@ var converterObj = new converter();
     
 **AMD**
 
+```javascript
 	var converter = require("~path/converter");
     var converterObj = new converter();
     converterObj.methodName(parameters);
+```
 
 ## Methods
 
