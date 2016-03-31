@@ -22,7 +22,7 @@ and then use class instance
     var converterObj = new converter();
     converterObj.methodName(parameters);
 
-## Includes
+## Methods
 
 **Number**
 
