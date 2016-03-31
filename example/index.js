@@ -14,6 +14,7 @@ $("#input").on("keyup", function(e){
 
 function action(){
 	var input = $("#input").val();
+	// input = "{\"qwe\" : \"wer\", \"ert\" : \"rty\"}";
 	var converterObj = new converter();
 	converterObj.secondsToDate(1459327000, function(result){
 		$("#result").append(result);

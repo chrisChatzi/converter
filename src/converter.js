@@ -1,9 +1,8 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 (function(){
     'use strict';
 
-    var number = require("./number");
-    var numberObj = new number();
+    // var number = require("./number");
+    // var numberObj = new number();
 
     var bit = function(){
         
@@ -54,7 +53,6 @@
             if(check) return;
             var check2 = numberObj.checkIfBinary(val2, callback);
             if(check2) return;
-            var self = this;
             numberObj.binToDec(val1, function (res){
                 numberObj.binToDec(val2, function (res2){
                     var converted = "";
@@ -83,12 +81,6 @@
             });
         },
     };
-
-    module.exports = bit;
-})();
-},{"./number":4}],2:[function(require,module,exports){
-(function(){
-    'use strict';
 
     var check = function(){
         
@@ -148,12 +140,6 @@
                 },
     };
 
-    module.exports = check;
-})();
-},{}],3:[function(require,module,exports){
-(function(){
-    'use strict';
-
     var json = function(){
         
     };
@@ -210,12 +196,6 @@
             callback(converted);
         },
     };
-
-    module.exports = json;
-})();
-},{}],4:[function(require,module,exports){
-(function(){
-    'use strict';
 
     var number = function(){
         
@@ -364,12 +344,6 @@
             },
     };
 
-    module.exports = number;
-})();
-},{}],5:[function(require,module,exports){
-(function(){
-    'use strict';
-
     var time = function(){
         
     };
@@ -499,12 +473,6 @@
         },
     };
 
-    module.exports = time;
-})();
-},{}],6:[function(require,module,exports){
-(function(){
-    'use strict';
-
     var type = function(){
         
     };
@@ -543,23 +511,11 @@
         },
     };
 
-    module.exports = type;
-})();
-},{}],7:[function(require,module,exports){
-(function(){
-    'use strict';
-
-    var check = require("./classes/check");
     var checkObj = new check();
-    var json = require("./classes/json");
     var jsonObj = new json();
-    var time = require("./classes/time");
     var timeObj = new time();
-    var type = require("./classes/type");
     var typeObj = new type();
-    var number = require("./classes/number");
     var numberObj = new number();
-    var bit = require("./classes/bit");
     var bitObj = new bit();
 
     var converter = function(){
@@ -733,4 +689,3 @@
 
     module.exports = converter;
 })();
-},{"./classes/bit":1,"./classes/check":2,"./classes/json":3,"./classes/number":4,"./classes/time":5,"./classes/type":6}]},{},[7]);
