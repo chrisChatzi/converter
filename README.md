@@ -37,7 +37,7 @@ converterObj.methodName(parameters);
 binary to octal
 
 ```javascript
-binToOct(input, callback);
+binToOct (input, callback);
 ```
 
 binary to decimal
