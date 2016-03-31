@@ -244,7 +244,7 @@ ___
 array to JSON (only values)
 
 ```javascript
-{ "0" : val1, "1" : val2, ... }
+[ val1, val2, ... ] -> { "0" : val1, "1" : val2, ... }
 
 arrayToJson(input, callback);
 ```
@@ -252,7 +252,7 @@ arrayToJson(input, callback);
 array to JSON (keys and values)
 
 ```javascript
-{ key1 : val1, key2 : val2, ... }
+[ key1, val1, key2, val2, ... ] -> { key1 : val1, key2 : val2, ... }
 
 arrayToJsonKeyVal(input, callback);
 ```
@@ -260,7 +260,7 @@ arrayToJsonKeyVal(input, callback);
 JSON to array (only values)
 
 ```javascript
-[val1, val2, ... ]
+{ key1 : val1, key2 : val2, ... } -> [val1, val2, ... ]
 
 jsonToArray(input, callback);
 ```
@@ -268,7 +268,7 @@ jsonToArray(input, callback);
 JSON to array of arrays
 
 ```javascript
-[ [ key1, val1 ], [ key2, val2 ], ... ]
+{ key1 : val1, key2 : val2, ... } -> [ [ key1, val1 ], [ key2, val2 ], ... ]
 
 jsonToArrayofArrays(input, callback);
 ```
@@ -282,19 +282,28 @@ jsonToString(input, callback);
 string to JSON
 
 ```javascript
+"{\"key1\" : \"val1\", \"key2\" : \"val2\"}";
 stringToJson(input, callback);
 ```
 
 array to string
 
 ```javascript
-arrayToString(input, callback);
+arrayToString(input, separator, callback);
+
+e.g. arrayToString([1,2,3], "&", function(res){
+		console.log(res); // res = "1 & 2 & 3"
+	});
 ```
 
 string to array
 
 ```javascript
-stringToArray(input, callback);
+stringToArray(input, separator, callback);
+
+e.g. stringToArray("5.7.8", ".", function(res){
+		console.log(res); // res = [5, 7, 8]
+	});
 ```
 
 <a href="#checks"></a>
