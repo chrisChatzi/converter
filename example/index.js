@@ -16,7 +16,7 @@ function action(){
 	var input = $("#input").val();
 	// input = "{\"qwe\" : \"wer\", \"ert\" : \"rty\"}";
 	converter.connect(input, function(result){
-		$("#result").html(result);
+		$("#result").append(result);
 		console.log(result);
 	});
 };
