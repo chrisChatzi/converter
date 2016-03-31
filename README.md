@@ -15,7 +15,7 @@ Universal converter.
 
 ## Usage
 
-**From src**
+#####From src
 
 Include to html header
     
@@ -35,7 +35,7 @@ and then use class instance
 var converterObj = new converter();
 ```
     
-**AMD**
+#####AMD
 
 ```javascript
 var converter = require("~path/converter");
