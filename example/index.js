@@ -1,5 +1,7 @@
 var $ = require("jquery");
-var converter = require("../lib/converter");
+// ----- If used as AMD from src folder uncomment next line
+// var converter = require("../lib/converter");
+// ----- endif
 var template = require("./jade/main.jade");
 $('body').append(template());
 
