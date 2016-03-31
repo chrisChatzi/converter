@@ -1,6 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var $ = require("jquery");
-var converter = require("../lib/converterInterface");
+var converter = require("../lib/converter");
 var template = require("./jade/main.jade");
 $('body').append(template());
 
@@ -16,12 +16,17 @@ $("#input").on("keyup", function(e){
 function action(){
 	var input = $("#input").val();
 	// input = "{\"qwe\" : \"wer\", \"ert\" : \"rty\"}";
-	converter.connect(input, function(result){
+	var converterObj = new converter();
+	converterObj.secondsToDate(1459327000, function(result){
 		$("#result").append(result);
 		console.log(result);
 	});
+	// converter.action(input, function(result){
+	// 	$("#result").append(result);
+	// 	console.log(result);
+	// });
 };
-},{"../lib/converterInterface":13,"./jade/main.jade":2,"jquery":5}],2:[function(require,module,exports){
+},{"../lib/converter":12,"./jade/main.jade":2,"jquery":5}],2:[function(require,module,exports){
 var jade = require("jade/runtime");
 
 module.exports = function template(locals) {
@@ -10867,26 +10872,4 @@ return jQuery;
 
     module.exports = converter;
 })();
-},{"./classes/bit":6,"./classes/check":7,"./classes/json":8,"./classes/number":9,"./classes/time":10,"./classes/type":11}],13:[function(require,module,exports){
-(function(){
-    'use strict';
-
-    var converter = require("./converter");
-    var converterObj = "";
-
-    function connect(data, callback){
-    	if(!converterObj) converterObj = new converter();
-        converterObj.secondsToDate(1459327000, callback);
-        converterObj.getDateNow(callback);
-        converterObj.datenowToSeconds(callback);
-        converterObj.timeDifference(1459327000, "", callback);
-        converterObj.shiftZeroRight(data, 2, callback);
-        converterObj.check(123, callback);
-        converterObj.checkIfNull(null, callback);
-    };
-
-    module.exports = {
-    	connect : connect
-    };
-})();
-},{"./converter":12}]},{},[1]);
+},{"./classes/bit":6,"./classes/check":7,"./classes/json":8,"./classes/number":9,"./classes/time":10,"./classes/type":11}]},{},[1]);

@@ -1,5 +1,5 @@
 var $ = require("jquery");
-var converter = require("../lib/converterInterface");
+var converter = require("../lib/converter");
 var template = require("./jade/main.jade");
 $('body').append(template());
 
@@ -14,8 +14,8 @@ $("#input").on("keyup", function(e){
 
 function action(){
 	var input = $("#input").val();
-	// input = "{\"qwe\" : \"wer\", \"ert\" : \"rty\"}";
-	converter.connect(input, function(result){
+	var converterObj = new converter();
+	converterObj.secondsToDate(1459327000, function(result){
 		$("#result").append(result);
 		console.log(result);
 	});
