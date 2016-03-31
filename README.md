@@ -1,15 +1,15 @@
 Universal converter.
 
 ##### Methods
-<a href="#number">Number</a>
+<a href="#number">Number conversions (binary to decimal etc.)</a>
 <br>
-<a href="#date">Date/time</a>
+<a href="#date">Date and time</a>
 <br>
-<a href="#types">Types</a>
+<a href="#types">Types (integer and float)</a>
 <br>
-<a href="#bit">Bit</a>
+<a href="#bit">Bit operations</a>
 <br>
-<a href="#json">JSON</a>
+<a href="#json">JSON and arrays</a>
 <br>
 <a href="#checks">Checks</a>
 
