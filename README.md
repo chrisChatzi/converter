@@ -1,7 +1,7 @@
 Universal converter.
 
 ##### Methods
-<a href="#number">Number</a>
+<a href="#Number">Number</a>
 <br>
 <a href="#Date">Date/time</a>
 <br>
@@ -45,7 +45,8 @@ converterObj.methodName(parameters);
 
 ## Methods
 
-<a href='#number'>#####Number</a>
+<a href="#number"></a>
+#####Number
 
 binary to octal
 
