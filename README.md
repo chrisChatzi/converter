@@ -2,15 +2,11 @@ Universal converter.
 
 ### Methods
 <a href="#Number">Number</a>
-
+<br>
 <a href="#Date">Date/time</a>
-
 <a href="#Types">Types</a>
-
 <a href="#Bit">Bit</a>
-
 <a href="#JSON">JSON</a>
-
 <a href="#Checks">Checks</a>
 
 ## Usage
