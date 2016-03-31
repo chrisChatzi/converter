@@ -1,5 +1,5 @@
 var $ = require("jquery");
-var converter = require("../converterInterface");
+var converter = require("../lib/converterInterface");
 var template = require("./jade/main.jade");
 $('body').append(template());
 
