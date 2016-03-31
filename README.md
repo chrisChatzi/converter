@@ -3,15 +3,15 @@ Universal converter.
 ##### Methods
 <a href="#number">Number</a>
 <br>
-<a href="#Date">Date/time</a>
+<a href="#date">Date/time</a>
 <br>
-<a href="#Types">Types</a>
+<a href="#types">Types</a>
 <br>
-<a href="#Bit">Bit</a>
+<a href="#bit">Bit</a>
 <br>
-<a href="#JSON">JSON</a>
+<a href="#json">JSON</a>
 <br>
-<a href="#Checks">Checks</a>
+<a href="#checks">Checks</a>
 
 ## Usage
 
@@ -120,6 +120,7 @@ hexadecimal to decimal
 hexToDec(input, callback);
 ```
 
+<a href="#date"></a>
 #####Date/time
 
 date now
@@ -158,6 +159,7 @@ time difference
 timeDifference(from, to, callback);
 ```
 
+<a href="#types"></a>
 #####Types
 
 int to float
@@ -178,6 +180,7 @@ float rounded
 floatRounded(input, callback);
 ```
 
+<a href="#bit"></a>
 #####Bit
 
 get bit value in position
@@ -228,6 +231,7 @@ bitwise NOT
 bitNot(input, callback);
 ```
 
+<a href="#json"></a>
 #####JSON
 
 array to JSON (only values)
@@ -286,6 +290,7 @@ string to array
 stringToArray(input, callback);
 ```
 
+<a href="#checks"></a>
 #####Checks
 
 check MAC
