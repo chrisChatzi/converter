@@ -1,6 +1,6 @@
 Universal converter.
 
-### Methods
+##### Methods
 <a href="#Number">Number</a>
 <br>
 <a href="#Date">Date/time</a>
