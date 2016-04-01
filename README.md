@@ -1,17 +1,17 @@
 Universal converter.
 
 ##### Methods
-<a href="#number">Number conversions (binary, octal, decimal, hex)</a>
+* <a href="#number">Number conversions (binary, octal, decimal, hex)</a>
 <br>
-<a href="#date">Date and time</a>
+* <a href="#date">Date and time</a>
 <br>
-<a href="#types">Types (integer and float)</a>
+* <a href="#types">Types (integer and float)</a>
 <br>
-<a href="#bit">Bit operations</a>
+* <a href="#bit">Bit operations</a>
 <br>
-<a href="#json">JSON and array conversions</a>
+* <a href="#json">JSON and array conversions</a>
 <br>
-<a href="#checks">Checks</a>
+* <a href="#checks">Checks</a>
 
 ## Usage
 
@@ -49,6 +49,7 @@ converterObj.methodName(parameters);
 
 <a href="#number"></a>
 #####Number
+___
 
 binary to octal
 
@@ -124,6 +125,7 @@ hexToDec(input, callback);
 
 <a href="#date"></a>
 #####Date/time
+___
 
 date now
 
@@ -163,6 +165,7 @@ timeDifference(from, to, callback);
 
 <a href="#types"></a>
 #####Types
+___
 
 int to float
 
@@ -184,6 +187,7 @@ floatRounded(input, callback);
 
 <a href="#bit"></a>
 #####Bit
+___
 
 get bit value in position
 
@@ -235,11 +239,12 @@ bitNot(input, callback);
 
 <a href="#json"></a>
 #####JSON
+___
 
 array to JSON (only values)
 
 ```javascript
-{ "0" : val1, "1" : val2, ... }
+[ val1, val2, ... ] -> { "0" : val1, "1" : val2, ... }
 
 arrayToJson(input, callback);
 ```
@@ -247,7 +252,7 @@ arrayToJson(input, callback);
 array to JSON (keys and values)
 
 ```javascript
-{ key1 : val1, key2 : val2, ... }
+[ key1, val1, key2, val2, ... ] -> { key1 : val1, key2 : val2, ... }
 
 arrayToJsonKeyVal(input, callback);
 ```
@@ -255,7 +260,7 @@ arrayToJsonKeyVal(input, callback);
 JSON to array (only values)
 
 ```javascript
-[val1, val2, ... ]
+{ key1 : val1, key2 : val2, ... } -> [val1, val2, ... ]
 
 jsonToArray(input, callback);
 ```
@@ -263,7 +268,7 @@ jsonToArray(input, callback);
 JSON to array of arrays
 
 ```javascript
-[ [ key1, val1 ], [ key2, val2 ], ... ]
+{ key1 : val1, key2 : val2, ... } -> [ [ key1, val1 ], [ key2, val2 ], ... ]
 
 jsonToArrayofArrays(input, callback);
 ```
@@ -277,23 +282,33 @@ jsonToString(input, callback);
 string to JSON
 
 ```javascript
+"{\"key1\" : \"val1\", \"key2\" : \"val2\"}";
 stringToJson(input, callback);
 ```
 
 array to string
 
 ```javascript
-arrayToString(input, callback);
+arrayToString(input, separator, callback);
+
+e.g. arrayToString([1,2,3], "&", function(res){
+		console.log(res); // res = "1 & 2 & 3"
+	});
 ```
 
 string to array
 
 ```javascript
-stringToArray(input, callback);
+stringToArray(input, separator, callback);
+
+e.g. stringToArray("5.7.8", ".", function(res){
+		console.log(res); // res = [5, 7, 8]
+	});
 ```
 
 <a href="#checks"></a>
 #####Checks
+___
 
 check MAC
 
