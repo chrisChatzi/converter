@@ -63,10 +63,10 @@
                 this.bitwiseOperations("and", data, value, callback);
             },
             bitOr : function(data, value, callback){
-                this.bitwiseOperations("and", data, value, callback);
+                this.bitwiseOperations("or", data, value, callback);
             },
             bitXor : function(data, value, callback){
-                this.bitwiseOperations("and", data, value, callback);
+                this.bitwiseOperations("xor", data, value, callback);
             },
             bitNot : function(data, callback){
                 var check = numberObj.checkIfBinary(data, callback);
